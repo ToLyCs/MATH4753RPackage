@@ -1,0 +1,57 @@
+---
+title: "R Package Assignment"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{R Package Assignment}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(RPACKAGETOLY)
+```
+
+# The First Function Mycurve
+```{r}
+RPACKAGETOLY::myncurve(mu = 10, sigma = 5, a = 6)
+```
+
+# The Second Function Mybin
+```{r}
+RPACKAGETOLY::mybin()
+```
+
+# The Third Function Myci
+```{r}
+set.seed(25)
+x = rnorm(30, mean = 10, sd = 12)
+RPACKAGETOLY::myci(x)
+```
+
+# The Fourth Function Mymaxlikg
+```{r}
+RPACKAGETOLY::mymaxlikg(theta = seq(0,1, length=10000))
+```
+
+# The Fifth Function Adding Data
+
+```{r}
+RPACKAGETOLY::adddata(spruce)
+```
+
+
+
+
+
+
+
+
+
+
